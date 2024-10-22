@@ -14,3 +14,4 @@ class LustranewparsSpider(scrapy.Spider):
                 'price' : lustra.css('div.product-card__price::text').get().strip(),                      # get()-берём первое попавшееся, strip()-убираем пробелы
                 'url' : lustra.css('a').attrib['href'].strip()                                            # strip()-убираем пробелы
             }
+# lustraparsscrapy
